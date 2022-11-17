@@ -30,17 +30,17 @@ Partial Class frmFinal
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lstDatos = New System.Windows.Forms.ListBox()
-        Me.btnAgregar = New System.Windows.Forms.Button()
-        Me.btnEditar = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
-        Me.btnLeer = New System.Windows.Forms.Button()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.btnLeer = New System.Windows.Forms.Button()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnAgregar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtNombre
@@ -101,71 +101,21 @@ Partial Class frmFinal
         Me.lstDatos.Size = New System.Drawing.Size(550, 109)
         Me.lstDatos.TabIndex = 6
         '
-        'btnAgregar
-        '
-        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.Location = New System.Drawing.Point(15, 291)
-        Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(43, 35)
-        Me.btnAgregar.TabIndex = 7
-        Me.btnAgregar.Text = "+"
-        Me.btnAgregar.UseVisualStyleBackColor = True
-        '
-        'btnEditar
-        '
-        Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEditar.Location = New System.Drawing.Point(64, 291)
-        Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(43, 35)
-        Me.btnEditar.TabIndex = 8
-        Me.btnEditar.Text = "+-"
-        Me.btnEditar.UseVisualStyleBackColor = True
-        '
-        'btnEliminar
-        '
-        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(113, 291)
-        Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(43, 35)
-        Me.btnEliminar.TabIndex = 9
-        Me.btnEliminar.Text = "-"
-        Me.btnEliminar.UseVisualStyleBackColor = True
-        '
-        'btnBuscar
-        '
-        Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscar.Location = New System.Drawing.Point(162, 291)
-        Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(43, 35)
-        Me.btnBuscar.TabIndex = 10
-        Me.btnBuscar.Text = "Buscar"
-        Me.btnBuscar.UseVisualStyleBackColor = True
-        '
         'btnGuardar
         '
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGuardar.Location = New System.Drawing.Point(300, 291)
+        Me.btnGuardar.Image = Global.Final.My.Resources.Resources.guardar
+        Me.btnGuardar.Location = New System.Drawing.Point(459, 281)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(43, 35)
+        Me.btnGuardar.Size = New System.Drawing.Size(48, 45)
         Me.btnGuardar.TabIndex = 12
-        Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
-        '
-        'btnLeer
-        '
-        Me.btnLeer.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLeer.Location = New System.Drawing.Point(349, 291)
-        Me.btnLeer.Name = "btnLeer"
-        Me.btnLeer.Size = New System.Drawing.Size(43, 35)
-        Me.btnLeer.TabIndex = 13
-        Me.btnLeer.Text = "Leer"
-        Me.btnLeer.UseVisualStyleBackColor = True
         '
         'txtBuscar
         '
-        Me.txtBuscar.Location = New System.Drawing.Point(15, 341)
+        Me.txtBuscar.Location = New System.Drawing.Point(12, 332)
         Me.txtBuscar.Name = "txtBuscar"
-        Me.txtBuscar.Size = New System.Drawing.Size(190, 20)
+        Me.txtBuscar.Size = New System.Drawing.Size(213, 20)
         Me.txtBuscar.TabIndex = 14
         Me.txtBuscar.Visible = False
         '
@@ -206,12 +156,62 @@ Partial Class frmFinal
         Me.Label8.TabIndex = 19
         Me.Label8.Text = "Teléfono"
         '
+        'btnLeer
+        '
+        Me.btnLeer.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLeer.Image = Global.Final.My.Resources.Resources.leer
+        Me.btnLeer.Location = New System.Drawing.Point(513, 281)
+        Me.btnLeer.Name = "btnLeer"
+        Me.btnLeer.Size = New System.Drawing.Size(48, 45)
+        Me.btnLeer.TabIndex = 13
+        Me.btnLeer.UseVisualStyleBackColor = True
+        '
+        'btnBuscar
+        '
+        Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBuscar.Image = Global.Final.My.Resources.Resources.f
+        Me.btnBuscar.Location = New System.Drawing.Point(177, 281)
+        Me.btnBuscar.Name = "btnBuscar"
+        Me.btnBuscar.Size = New System.Drawing.Size(48, 45)
+        Me.btnBuscar.TabIndex = 10
+        Me.btnBuscar.UseVisualStyleBackColor = True
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEliminar.Image = Global.Final.My.Resources.Resources.eliminar
+        Me.btnEliminar.Location = New System.Drawing.Point(122, 281)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(49, 45)
+        Me.btnEliminar.TabIndex = 9
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'btnEditar
+        '
+        Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEditar.Image = Global.Final.My.Resources.Resources.editar
+        Me.btnEditar.Location = New System.Drawing.Point(67, 281)
+        Me.btnEditar.Name = "btnEditar"
+        Me.btnEditar.Size = New System.Drawing.Size(49, 45)
+        Me.btnEditar.TabIndex = 8
+        Me.btnEditar.UseVisualStyleBackColor = True
+        '
+        'btnAgregar
+        '
+        Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.Image = Global.Final.My.Resources.Resources.agregar
+        Me.btnAgregar.Location = New System.Drawing.Point(12, 281)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(49, 45)
+        Me.btnAgregar.TabIndex = 7
+        Me.btnAgregar.UseVisualStyleBackColor = True
+        '
         'frmFinal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PeachPuff
-        Me.ClientSize = New System.Drawing.Size(569, 368)
+        Me.ClientSize = New System.Drawing.Size(573, 363)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
