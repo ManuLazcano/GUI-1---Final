@@ -45,21 +45,21 @@ Partial Class frmFinal
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(189, 46)
+        Me.txtNombre.Location = New System.Drawing.Point(211, 47)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(181, 20)
         Me.txtNombre.TabIndex = 0
         '
         'txtDireccion
         '
-        Me.txtDireccion.Location = New System.Drawing.Point(189, 72)
+        Me.txtDireccion.Location = New System.Drawing.Point(211, 73)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(181, 20)
         Me.txtDireccion.TabIndex = 1
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(189, 98)
+        Me.txtTelefono.Location = New System.Drawing.Point(211, 99)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(181, 20)
         Me.txtTelefono.TabIndex = 2
@@ -67,7 +67,7 @@ Partial Class frmFinal
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(98, 45)
+        Me.Label1.Location = New System.Drawing.Point(120, 46)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(85, 19)
         Me.Label1.TabIndex = 3
@@ -76,7 +76,7 @@ Partial Class frmFinal
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(98, 97)
+        Me.Label2.Location = New System.Drawing.Point(120, 98)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(85, 23)
         Me.Label2.TabIndex = 4
@@ -85,7 +85,7 @@ Partial Class frmFinal
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(98, 72)
+        Me.Label3.Location = New System.Drawing.Point(120, 73)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(85, 27)
         Me.Label3.TabIndex = 5
@@ -93,12 +93,12 @@ Partial Class frmFinal
         '
         'lstDatos
         '
-        Me.lstDatos.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstDatos.Font = New System.Drawing.Font("Courier New", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstDatos.FormattingEnabled = True
-        Me.lstDatos.ItemHeight = 14
+        Me.lstDatos.ItemHeight = 15
         Me.lstDatos.Location = New System.Drawing.Point(9, 155)
         Me.lstDatos.Name = "lstDatos"
-        Me.lstDatos.Size = New System.Drawing.Size(525, 116)
+        Me.lstDatos.Size = New System.Drawing.Size(550, 109)
         Me.lstDatos.TabIndex = 6
         '
         'btnAgregar
@@ -172,7 +172,7 @@ Partial Class frmFinal
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("MV Boli", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(219, 7)
+        Me.Label4.Location = New System.Drawing.Point(241, 8)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(119, 35)
         Me.Label4.TabIndex = 15
@@ -211,7 +211,7 @@ Partial Class frmFinal
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PeachPuff
-        Me.ClientSize = New System.Drawing.Size(543, 368)
+        Me.ClientSize = New System.Drawing.Size(569, 368)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)

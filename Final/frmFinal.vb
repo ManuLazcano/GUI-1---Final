@@ -136,6 +136,8 @@ Public Class frmFinal
     End Sub
 
     Private Sub btnLeer_Click(sender As Object, e As EventArgs) Handles btnLeer.Click
+        'Limpio el listBox, para mostrar solo los datos guardados
+        Me.lstDatos.Items.Clear()
         Me.Leer(ubicacion & nomArchivo)
     End Sub
 
