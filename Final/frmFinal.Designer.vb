@@ -45,64 +45,66 @@ Partial Class frmFinal
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(104, 44)
+        Me.txtNombre.Location = New System.Drawing.Point(189, 46)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(181, 20)
         Me.txtNombre.TabIndex = 0
         '
         'txtDireccion
         '
-        Me.txtDireccion.Location = New System.Drawing.Point(104, 70)
+        Me.txtDireccion.Location = New System.Drawing.Point(189, 72)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(181, 20)
         Me.txtDireccion.TabIndex = 1
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(104, 94)
+        Me.txtTelefono.Location = New System.Drawing.Point(189, 98)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(181, 20)
         Me.txtTelefono.TabIndex = 2
         '
         'Label1
         '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 47)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(98, 45)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(71, 17)
+        Me.Label1.Size = New System.Drawing.Size(85, 19)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Nombre: "
         '
         'Label2
         '
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(12, 97)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(98, 97)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(71, 17)
+        Me.Label2.Size = New System.Drawing.Size(85, 23)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Teléfono: "
         '
         'Label3
         '
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 73)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(98, 72)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(74, 17)
+        Me.Label3.Size = New System.Drawing.Size(85, 27)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Dirección:"
         '
         'lstDatos
         '
+        Me.lstDatos.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstDatos.FormattingEnabled = True
-        Me.lstDatos.Location = New System.Drawing.Point(15, 154)
+        Me.lstDatos.ItemHeight = 14
+        Me.lstDatos.Location = New System.Drawing.Point(9, 155)
         Me.lstDatos.Name = "lstDatos"
-        Me.lstDatos.Size = New System.Drawing.Size(380, 121)
+        Me.lstDatos.Size = New System.Drawing.Size(525, 116)
         Me.lstDatos.TabIndex = 6
         '
         'btnAgregar
         '
         Me.btnAgregar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAgregar.Location = New System.Drawing.Point(18, 290)
+        Me.btnAgregar.Location = New System.Drawing.Point(15, 291)
         Me.btnAgregar.Name = "btnAgregar"
         Me.btnAgregar.Size = New System.Drawing.Size(43, 35)
         Me.btnAgregar.TabIndex = 7
@@ -112,7 +114,7 @@ Partial Class frmFinal
         'btnEditar
         '
         Me.btnEditar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEditar.Location = New System.Drawing.Point(67, 290)
+        Me.btnEditar.Location = New System.Drawing.Point(64, 291)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(43, 35)
         Me.btnEditar.TabIndex = 8
@@ -122,7 +124,7 @@ Partial Class frmFinal
         'btnEliminar
         '
         Me.btnEliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEliminar.Location = New System.Drawing.Point(116, 290)
+        Me.btnEliminar.Location = New System.Drawing.Point(113, 291)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(43, 35)
         Me.btnEliminar.TabIndex = 9
@@ -132,7 +134,7 @@ Partial Class frmFinal
         'btnBuscar
         '
         Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBuscar.Location = New System.Drawing.Point(165, 290)
+        Me.btnBuscar.Location = New System.Drawing.Point(162, 291)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(43, 35)
         Me.btnBuscar.TabIndex = 10
@@ -142,7 +144,7 @@ Partial Class frmFinal
         'btnGuardar
         '
         Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGuardar.Location = New System.Drawing.Point(303, 290)
+        Me.btnGuardar.Location = New System.Drawing.Point(300, 291)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(43, 35)
         Me.btnGuardar.TabIndex = 12
@@ -152,7 +154,7 @@ Partial Class frmFinal
         'btnLeer
         '
         Me.btnLeer.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLeer.Location = New System.Drawing.Point(352, 290)
+        Me.btnLeer.Location = New System.Drawing.Point(349, 291)
         Me.btnLeer.Name = "btnLeer"
         Me.btnLeer.Size = New System.Drawing.Size(43, 35)
         Me.btnLeer.TabIndex = 13
@@ -161,7 +163,7 @@ Partial Class frmFinal
         '
         'txtBuscar
         '
-        Me.txtBuscar.Location = New System.Drawing.Point(18, 340)
+        Me.txtBuscar.Location = New System.Drawing.Point(15, 341)
         Me.txtBuscar.Name = "txtBuscar"
         Me.txtBuscar.Size = New System.Drawing.Size(190, 20)
         Me.txtBuscar.TabIndex = 14
@@ -170,7 +172,7 @@ Partial Class frmFinal
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("MV Boli", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(137, 6)
+        Me.Label4.Location = New System.Drawing.Point(219, 7)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(119, 35)
         Me.Label4.TabIndex = 15
@@ -179,8 +181,8 @@ Partial Class frmFinal
         '
         'Label6
         '
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(26, 134)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(23, 135)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(71, 17)
         Me.Label6.TabIndex = 17
@@ -188,8 +190,8 @@ Partial Class frmFinal
         '
         'Label7
         '
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(162, 134)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(244, 135)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(71, 17)
         Me.Label7.TabIndex = 18
@@ -197,8 +199,8 @@ Partial Class frmFinal
         '
         'Label8
         '
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(300, 134)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(449, 135)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(71, 17)
         Me.Label8.TabIndex = 19
@@ -209,7 +211,7 @@ Partial Class frmFinal
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PeachPuff
-        Me.ClientSize = New System.Drawing.Size(415, 375)
+        Me.ClientSize = New System.Drawing.Size(543, 368)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)

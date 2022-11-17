@@ -11,3 +11,16 @@ D:\Final\Final\obj\Debug\Final.exe
 D:\Final\Final\obj\Debug\Final.xml
 D:\Final\Final\obj\Debug\Final.pdb
 D:\Final\Final\obj\Debug\Final.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Manuel\Desktop\Final\Final\bin\Debug\Final.exe.config
+C:\Users\Manuel\Desktop\Final\Final\bin\Debug\Final.exe
+C:\Users\Manuel\Desktop\Final\Final\bin\Debug\Final.pdb
+C:\Users\Manuel\Desktop\Final\Final\bin\Debug\Final.xml
+C:\Users\Manuel\Desktop\Final\Final\obj\Debug\Final.vbproj.AssemblyReference.cache
+C:\Users\Manuel\Desktop\Final\Final\obj\Debug\Final.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Manuel\Desktop\Final\Final\obj\Debug\Final.frmFinal.resources
+C:\Users\Manuel\Desktop\Final\Final\obj\Debug\Final.Resources.resources
+C:\Users\Manuel\Desktop\Final\Final\obj\Debug\Final.vbproj.GenerateResource.cache
+C:\Users\Manuel\Desktop\Final\Final\obj\Debug\Final.vbproj.CoreCompileInputs.cache
+C:\Users\Manuel\Desktop\Final\Final\obj\Debug\Final.exe
+C:\Users\Manuel\Desktop\Final\Final\obj\Debug\Final.xml
+C:\Users\Manuel\Desktop\Final\Final\obj\Debug\Final.pdb

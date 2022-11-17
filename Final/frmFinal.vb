@@ -134,4 +134,5 @@ Public Class frmFinal
     Private Sub btnLeer_Click(sender As Object, e As EventArgs) Handles btnLeer.Click
         Me.Leer(ubicacion & nomArchivo)
     End Sub
+
 End Class
