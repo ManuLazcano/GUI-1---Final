@@ -30,13 +30,13 @@ Partial Class frmFinal
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lstDatos = New System.Windows.Forms.ListBox()
-        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.txtBuscar = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.btnLeer = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
@@ -101,16 +101,6 @@ Partial Class frmFinal
         Me.lstDatos.Size = New System.Drawing.Size(550, 109)
         Me.lstDatos.TabIndex = 6
         '
-        'btnGuardar
-        '
-        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGuardar.Image = Global.Final.My.Resources.Resources.guardar
-        Me.btnGuardar.Location = New System.Drawing.Point(459, 281)
-        Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(48, 45)
-        Me.btnGuardar.TabIndex = 12
-        Me.btnGuardar.UseVisualStyleBackColor = True
-        '
         'txtBuscar
         '
         Me.txtBuscar.Location = New System.Drawing.Point(12, 332)
@@ -166,6 +156,16 @@ Partial Class frmFinal
         Me.btnLeer.TabIndex = 13
         Me.btnLeer.UseVisualStyleBackColor = True
         '
+        'btnGuardar
+        '
+        Me.btnGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGuardar.Image = Global.Final.My.Resources.Resources.guardar
+        Me.btnGuardar.Location = New System.Drawing.Point(459, 281)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(48, 45)
+        Me.btnGuardar.TabIndex = 12
+        Me.btnGuardar.UseVisualStyleBackColor = True
+        '
         'btnBuscar
         '
         Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -210,7 +210,7 @@ Partial Class frmFinal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.PeachPuff
+        Me.BackColor = System.Drawing.Color.LightSteelBlue
         Me.ClientSize = New System.Drawing.Size(573, 363)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
