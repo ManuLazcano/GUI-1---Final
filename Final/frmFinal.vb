@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 
+'El listBox con la fuente: courier new
 Public Class frmFinal
     Dim nomArchivo As String
     Dim ubicacion As String
@@ -82,9 +83,12 @@ Public Class frmFinal
             Exit Sub
         End If
 
-        Me.txtNombre.Text = Mid(Me.lstDatos.SelectedItem.ToString(), 1, 35)
-        Me.txtDireccion.Text = Mid(Me.lstDatos.SelectedItem.ToString(), 36, 35)
-        Me.txtTelefono.Text = Mid(Me.lstDatos.SelectedItem.ToString(), 74, 15)
+        'Desde la posición 1 al 30, porque 30 es el máximo de caracteres permitidos
+        Me.txtNombre.Text = Mid(Me.lstDatos.SelectedItem.ToString(), 1, 30)
+        'Desde el 32, porque son 30+1(espacio en blanco) + 1(Desde donde empieza)
+        Me.txtDireccion.Text = Mid(Me.lstDatos.SelectedItem.ToString(), 32, 30)
+        'La misma lógica
+        Me.txtTelefono.Text = Mid(Me.lstDatos.SelectedItem.ToString(), 63, 15)
 
         Me.Eliminar(Me.lstDatos)
     End Sub
