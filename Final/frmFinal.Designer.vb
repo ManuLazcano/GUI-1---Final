@@ -96,7 +96,7 @@ Partial Class frmFinal
         Me.lstDatos.Font = New System.Drawing.Font("Courier New", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstDatos.FormattingEnabled = True
         Me.lstDatos.ItemHeight = 15
-        Me.lstDatos.Location = New System.Drawing.Point(9, 155)
+        Me.lstDatos.Location = New System.Drawing.Point(12, 155)
         Me.lstDatos.Name = "lstDatos"
         Me.lstDatos.Size = New System.Drawing.Size(550, 109)
         Me.lstDatos.TabIndex = 6
@@ -195,7 +195,7 @@ Partial Class frmFinal
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(71, 17)
         Me.Label7.TabIndex = 18
-        Me.Label7.Text = "Dirección:"
+        Me.Label7.Text = "Dirección"
         '
         'Label8
         '

@@ -4,6 +4,7 @@
 Public Class frmFinal
     Dim nomArchivo As String
     Dim ubicacion As String
+    Dim hayCambios As Boolean
 
     'Rutinas
     Sub Eliminar(dato As ListBox)
@@ -34,6 +35,7 @@ Public Class frmFinal
         Me.lstDatos.Focus()
     End Sub
 
+    'Botones
     Private Sub btnAgregar_Click(sender As Object, e As EventArgs) Handles btnAgregar.Click
         'Verifico que los textBox no estén vacios
         If Me.txtNombre.Text = "" Or Me.txtTelefono.Text = "" Or Me.txtDireccion.Text = "" Then
@@ -57,6 +59,7 @@ Public Class frmFinal
         Me.txtDireccion.Text = ""
         Me.txtTelefono.Text = ""
         Me.txtNombre.Focus()
+        hayCambios = True
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
@@ -73,6 +76,7 @@ Public Class frmFinal
         If respueta = vbYes Then
             Me.Eliminar(Me.lstDatos)
             Me.txtNombre.Focus()
+            hayCambios = True
         End If
     End Sub
 
@@ -91,6 +95,29 @@ Public Class frmFinal
         Me.txtTelefono.Text = Mid(Me.lstDatos.SelectedItem.ToString(), 63, 15)
 
         Me.Eliminar(Me.lstDatos)
+        hayCambios = True
+    End Sub
+
+    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
+        Me.Guardar(ubicacion & nomArchivo)
+        Me.lstDatos.Text = ""
+        hayCambios = False
+    End Sub
+
+    Private Sub btnLeer_Click(sender As Object, e As EventArgs) Handles btnLeer.Click
+        Dim opc
+
+        If hayCambios = True Then
+            opc = MsgBox("¿Desea guardar los cambios?", vbYesNo + vbInformation, "Atención")
+            If opc = vbYes Then
+                Me.Guardar(ubicacion & nomArchivo)
+            End If
+        End If
+        hayCambios = False
+
+        'Limpio el listBox, para mostrar solo los datos guardados
+        Me.lstDatos.Items.Clear()
+        Me.Leer(ubicacion & nomArchivo)
     End Sub
 
     Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
@@ -115,6 +142,7 @@ Public Class frmFinal
     End Sub
 
     Private Sub frmFinal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        hayCambios = False
         nomArchivo = "agenda.txt" 'Nombre físico del archivo
         ubicacion = "c:\intel\" 'Ucicacion donde sera almacenado
         Dim opc As Integer
@@ -123,22 +151,23 @@ Public Class frmFinal
             opc = MsgBox("Ya existe una agenda. ¿Desea leer su contenido?", vbYesNo + vbInformation)
             If opc = vbYes Then
                 Me.Leer(ubicacion & nomArchivo)
-                opc = 0
-            Else '¿Sobreescribo la agenda o lo agrego los nuevos datos
-                opc = 1
+                '    opc = 0
+                'Else
+                '    opc = 1
             End If
         End If
     End Sub
 
-    Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
-        Me.Guardar(ubicacion & nomArchivo)
-        Me.lstDatos.Text = ""
-    End Sub
+    Private Sub frmFinal_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Dim opc
 
-    Private Sub btnLeer_Click(sender As Object, e As EventArgs) Handles btnLeer.Click
-        'Limpio el listBox, para mostrar solo los datos guardados
-        Me.lstDatos.Items.Clear()
-        Me.Leer(ubicacion & nomArchivo)
+        If hayCambios = True Then
+            opc = MsgBox("¿Desea guardar los cambios?", vbYesNo + vbInformation, "Atención")
+            If opc = vbYes Then
+                Me.Guardar(ubicacion & nomArchivo)
+            End If
+        End If
+        hayCambios = False
     End Sub
 
 End Class
